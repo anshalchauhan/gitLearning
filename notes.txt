@@ -108,3 +108,42 @@ use command
 ssh-keygen -o
 (***remember only once use this command)
 
+Enter same passphrase again: 
+Your identification has been saved in C:\Users\Anshal Chauhan/.ssh/id_rsa.
+Your public key has been saved in C:\Users\Anshal Chauhan/.ssh/id_rsa.pub. 
+The key fingerprint is:
+SHA256:6UzS8vjFvIBFT8i/T9tjHOuX69P7hppPcwU33owjxbw anshal chauhan@ANSHAL   
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|       . .   o   |
+|        + .   =..|
+|       o =   ..*o|
+|      o S o . E.+|
+|       @ o . ....|
+|      o = = ..o++|
+|       . o + =*=+|
+|        . . ===B*|
++----[SHA256]-----+
+
+Go to the directory where .ssh is saved
+PS C:\users\Anshal Chauhan\.ssh>
+
+Enter command: ls
+
+PS C:\users\Anshal Chauhan\.ssh> cat id_rsa.pub
+ssh-rsa AAAABS...........TmRl6k= anshal chauhan@ANSHAL
+
+Copy the entire key
+Go to Github -> settings -> SSh and Gpg keys -> New SSh key -> (add title, add ssh key) -> add ssh key
+
+Every time u push something this ssh key will be verfied.
+
+17. to map local repository to remote repository
+git branch -M main
+git remote add origin git@github.com:anshalchauhan/gitLearning.git
+git push -u origin main
+
+18. git commit will only update file in local respository
+for commiting in remote repository we need to push the change after commiting
+
