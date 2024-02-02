@@ -148,3 +148,62 @@ git push -u origin main
 for commiting in remote repository we need to push the change after commiting
 
 PS A:\practice\git> git commit -a -m "notes 4 commit" 
+[main 875d235] notes 4 commit  
+ 1 file changed, 1 insertion(+)
+PS A:\practice\git> 
+
+PS A:\practice\git> git push origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.13 KiB | 1.13 MiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0     
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.       
+To github.com:anshalchauhan/gitLearning.git
+   145923d..875d235  main -> main
+PS A:\practice\git>
+
+in the command git push origin main, "origin" refers to the remote repository url, this is done to make referencing easier
+
+19. Remote server, command to see origin
+PS A:\practice\git> git remote -v
+origin  git@github.com:anshalchauhan/gitLearning.git (fetch)
+origin  git@github.com:anshalchauhan/gitLearning.git (push) 
+
+20. Tagging, we give the code a tag after some commits, tag is like a version number
+to check how many tags have been given to this code
+PS A:\practice\git> git tag
+2 options
+1. Annotated tagging
+2. lightweigh tagging
+
+Annotated has more Info
+
+to tag code :
+
+PS A:\practice\git> git tag -a v1.0 -m "1st release"
+PS A:\practice\git> git tag
+v1.0
+
+-a for annotated and -m for message (message is important)
+
+to see the info about tag :
+
+PS A:\practice\git> git show v1.0
+tag v1.0
+Tagger: anshal <anshalchauhan889@gmail.com>
+Date:   Fri Feb 2 16:55:15 2024 +0530
+
+1st release
+
+commit 875d23513c9abd52d792e93c1179ae6168cbdf9f (HEAD -> main, tag: v1.0, origin/main)
+Author: anshal <anshalchauhan889@gmail.com>
+Date:   Fri Feb 2 15:57:58 2024 +0530
+
+    notes 4 commit
+
+diff --git a/notes.txt b/notes.txt
+index aacc867..1b147a2 100644
+--- a/notes.txt
+:
