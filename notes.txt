@@ -367,3 +367,16 @@ PS A:\practice\git>
 
 Now to check pull, we will merge test1 and main
 
+PS A:\practice\git> git log
+PS A:\practice\git> git pull origin test1
+From github.com:anshalchauhan/gitLearning    
+ * branch            test1      -> FETCH_HEAD
+Already up to date.
+PS A:\practice\git> git switch test1
+Switched to branch 'test1'
+PS A:\practice\git> git merge main
+Updating ae68c67..982e192
+Fast-forward
+ notes.txt | 42 +++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 41 insertions(+), 1 deletion(-)
+PS A:\practice\git> 
