@@ -338,3 +338,28 @@ Fast-forward
  1 file changed, 121 insertions(+), 1 deletion(-)
 PS A:\practice\git> 
 
+The change above is only in local repository and not in remote repository
+
+We need to push the merge in remote repository
+
+*** Important point
+Always pull code from repository before merging and pushing,
+before merging main and test, we should have pulled the code from main and then merged
+
+git pull origin main
+
+
+
+To push the main branch update in remote repository
+
+PS A:\practice\git> git push origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.30 KiB | 1.30 MiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0     
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.       
+To github.com:anshalchauhan/gitLearning.git
+   1d806f4..aa91d84  main -> main
+PS A:\practice\git> 
