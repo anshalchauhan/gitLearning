@@ -1,0 +1,26 @@
+1. Install Git
+
+2. Update Git Info about user
+PS C:\Users\Anshal Chauhan> git config --global user.name "anshal"
+PS C:\Users\Anshal Chauhan> git config --global user.email "anshalchauhan889@gmail.com"
+
+3. Git, Working Directory, Staging area and commit history concepts
+
+4. git init - to initialize repository
+PS A:\practice\git> git init
+Initialized empty Git repository in A:/practice/git/.git/
+
+5. Project Directory = Git
+Under Git -> Working Directory and Local repository(.git, hidden folder)
+
+under Local repository -> Staging area.
+
+Add untracked files(files in working directory to staging area)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        notes.txt
+
+Commit is the object to add the file in staging area.
+
+6. Add git files to staging area
