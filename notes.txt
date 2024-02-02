@@ -239,3 +239,12 @@ PS A:\practice\git> git branch
 * test1
 
 * one means the current branch
+
+PS A:\practice\git> git commit -a -m "git branch learning 1"
+[test1 580e8ff] git branch learning 1
+ 1 file changed, 33 insertions(+), 1 deletion(-)
+PS A:\practice\git> 
+
+this is commited to the current branch, which means test1 branch and not main
+
+now if u change to main branch, the changes will be gone, even in local repository
