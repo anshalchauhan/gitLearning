@@ -249,6 +249,10 @@ this is commited to the current branch, which means test1 branch and not main
 
 now if u change to main branch, the changes will be gone, in your local repository, no cahnge will happen in remote repository because we have not pushed the branch in remote respository
 
+
+
+To switch branch use:
+
 PS A:\practice\git> git switch main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
@@ -273,6 +277,8 @@ PS A:\practice\git> git branch --all
 PS A:\practice\git> 
 
 
+
+
 To Switch back to previous branch use the command
 
 PS A:\practice\git> git switch -
@@ -290,3 +296,34 @@ PS A:\practice\git>
 
 Pushing a branch
 
+PS A:\practice\git> git push origin test1
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.59 KiB | 816.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0       
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.       
+remote: 
+remote: Create a pull request for 'test1' on GitHub by visiting:
+remote:      https://github.com/anshalchauhan/gitLearning/pull/new/test1   
+remote:
+To github.com:anshalchauhan/gitLearning.git
+ * [new branch]      test1 -> test1
+PS A:\practice\git> 
+
+
+
+How branching works, explained in telusko video
+Head pointer pointes to the current branch
+
+branches pointer still points to their respective commits.
+(commit is nothing but a snapshot)
+
+
+Install git graph vscode extension to help u visualize project.
+
+
+
+Merging 2 branches
+mergin main and test1
