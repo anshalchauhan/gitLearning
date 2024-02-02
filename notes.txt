@@ -363,3 +363,7 @@ remote: Resolving deltas: 100% (3/3), completed with 1 local object.
 To github.com:anshalchauhan/gitLearning.git
    1d806f4..aa91d84  main -> main
 PS A:\practice\git> 
+
+
+Now to check pull, we will merge test1 and main
+
