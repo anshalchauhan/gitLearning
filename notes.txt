@@ -24,3 +24,34 @@ Untracked files:
 Commit is the object to add the file in staging area.
 
 6. Add git files to staging area
+PS A:\practice\git> git add notes.txt
+PS A:\practice\git> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   notes.txt
+
+PS A:\practice\git>
+
+it is in staging environment not staged yet.
+to stage it use 
+
+git commit -m "(give some commit name here)"
+PS A:\practice\git> git commit -m "notes commit"
+[main (root-commit) d706c8b] notes commit
+ 1 file changed, 26 insertions(+)
+ create mode 100644 notes.txt
+
+
+7. git log - to see all commit history
+PS A:\practice\git> git log
+commit d706c8b40f8a16698d5ed12b48229d36c5371f34 (HEAD -> main)
+Author: anshal <anshalchauhan889@gmail.com>
+Date:   Fri Feb 2 13:15:01 2024 +0530
+
+    notes commit
+
+8. To skip the stagin part use -a
