@@ -326,4 +326,4 @@ Install git graph vscode extension to help u visualize project.
 
 
 Merging 2 branches
-mergin main and test1
+merging main and test1
