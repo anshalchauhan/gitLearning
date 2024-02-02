@@ -82,3 +82,29 @@ git diff --staged
 or
 for all files use
 git add .
+
+12. Delete
+first delete file from git.
+git rm --cached credentials.txt
+
+then delete from working directory
+
+13. Remote repository - this comes into picture for collaboration, various tools like github, gitlab and bitbucket
+
+14. git clone https.....
+to clone a repository
+
+15. Creating repository
+
+16. To connect your local repository to remote repository
+Two ways,
+1. HTTPS
+2. SSH
+
+Choose ssh, because in https user will have to login for every commit,
+To choose ssh
+use command 
+
+ssh-keygen -o
+(***remember only once use this command)
+
