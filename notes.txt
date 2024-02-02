@@ -77,3 +77,8 @@ index e4bc714..10e93ce 100644
 
 10. If u have staged the changes then use
 git diff --staged
+
+11. git add notes.txt credentials.txt
+or
+for all files use
+git add .
