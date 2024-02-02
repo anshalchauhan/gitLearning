@@ -247,4 +247,46 @@ PS A:\practice\git>
 
 this is commited to the current branch, which means test1 branch and not main
 
-now if u change to main branch, the changes will be gone, even in local repository
+now if u change to main branch, the changes will be gone, in your local repository, no cahnge will happen in remote repository because we have not pushed the branch in remote respository
+
+PS A:\practice\git> git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+
+you can use switch instead of checkout, for switch add -c
+
+PS A:\practice\git> git switch -c test2
+Switched to a new branch 'test2'
+
+git branch will show all local branches and git branch --all will show the local and remote branches also
+
+PS A:\practice\git> git branch 
+  main
+  test1
+* test2
+PS A:\practice\git> git branch --all
+  main
+  test1
+* test2
+  remotes/origin/main
+PS A:\practice\git> 
+
+
+To Switch back to previous branch use the command
+
+PS A:\practice\git> git switch -
+Switched to branch 'test1'
+M       notes.txt   
+
+
+
+To delete a branch
+
+PS A:\practice\git> git branch -d test2
+Deleted branch test2 (was e379184).
+PS A:\practice\git> 
+
+
+Pushing a branch
+
