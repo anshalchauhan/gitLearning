@@ -147,3 +147,4 @@ git push -u origin main
 18. git commit will only update file in local respository
 for commiting in remote repository we need to push the change after commiting
 
+PS A:\practice\git> git commit -a -m "notes 4 commit" 
