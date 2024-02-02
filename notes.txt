@@ -55,3 +55,25 @@ Date:   Fri Feb 2 13:15:01 2024 +0530
     notes commit
 
 8. To skip the stagin part use -a
+PS A:\practice\git> git commit -a -m "notes 1 commit"
+[main aec8e88] notes 1 commit
+ 1 file changed, 32 insertions(+), 1 deletion(-)
+
+9. diff command - To know what has been added till last commit
+PS A:\practice\git> git diff
+diff --git a/notes.txt b/notes.txt
+index e4bc714..10e93ce 100644     
+--- a/notes.txt
++++ b/notes.txt
+@@ -55,3 +55,8 @@ Date:   Fri Feb 2 13:15:01 2024 +0530
+     notes commit
+
+ 8. To skip the stagin part use -a
++PS A:\practice\git> git commit -a -m "notes 1 commit"
++[main aec8e88] notes 1 commit
++ 1 file changed, 32 insertions(+), 1 deletion(-)
++
++9. diff command - To know what has been added till last commit
+
+10. If u have staged the changes then use
+git diff --staged
