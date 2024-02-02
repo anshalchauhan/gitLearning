@@ -326,4 +326,15 @@ Install git graph vscode extension to help u visualize project.
 
 
 Merging 2 branches
-merging main and test1
+for merging main and test1, 1st switch to main and then use command:
+
+PS A:\practice\git> git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS A:\practice\git> git merge test1
+Updating 1d806f4..ae68c67
+Fast-forward
+ notes.txt | 122 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 121 insertions(+), 1 deletion(-)
+PS A:\practice\git> 
+
